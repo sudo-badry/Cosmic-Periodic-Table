@@ -11,6 +11,7 @@
     "melt": 13.99,
     "boil": 20.271,
     "sublimation": null,
+    "origin": "Big Bang Nucleosynthesis",
     "discovered_by": "Henry Cavendish",
     "phase": "Gas"
   },
@@ -26,6 +27,7 @@
     "melt": 0.95,
     "boil": 4.222,
     "sublimation": null,
+    "origin": "Big Bang Nucleosynthesis",
     "discovered_by": "Pierre Janssen",
     "phase": "Gas"
   },
@@ -41,6 +43,7 @@
     "melt": 453.65,
     "boil": 1603,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Johan August Arfwedson",
     "phase": "Solid"
   },
@@ -56,6 +59,7 @@
     "melt": 1560,
     "boil": 2742,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Louis Nicolas Vauquelin",
     "phase": "Solid"
   },
@@ -71,6 +75,7 @@
     "melt": 2349,
     "boil": 4200,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Joseph Louis Gay-Lussac",
     "phase": "Solid"
   },
@@ -86,6 +91,7 @@
     "melt": null,
     "boil": null,
     "sublimation": 3900,
+    "origin": "Stellar Fusion",
     "discovered_by": "Ancient Egypt",
     "phase": "Solid"
   },
@@ -101,6 +107,7 @@
     "melt": 63.15,
     "boil": 77.355,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Daniel Rutherford",
     "phase": "Gas"
   },
@@ -116,6 +123,7 @@
     "melt": 54.36,
     "boil": 90.188,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Carl Wilhelm Scheele",
     "phase": "Gas"
   },
@@ -131,6 +139,7 @@
     "melt": 53.48,
     "boil": 85.03,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Andr\u00e9-Marie Amp\u00e8re",
     "phase": "Gas"
   },
@@ -146,6 +155,7 @@
     "melt": 24.56,
     "boil": 27.104,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Morris Travers",
     "phase": "Gas"
   },
@@ -161,6 +171,7 @@
     "melt": 370.944,
     "boil": 1156.09,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Humphry Davy",
     "phase": "Solid"
   },
@@ -176,6 +187,7 @@
     "melt": 923,
     "boil": 1363,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Joseph Black",
     "phase": "Solid"
   },
@@ -191,6 +203,7 @@
     "melt": 933.47,
     "boil": 2743,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": null,
     "phase": "Solid"
   },
@@ -206,6 +219,7 @@
     "melt": 1687,
     "boil": 3538,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "J\u00f6ns Jacob Berzelius",
     "phase": "Solid"
   },
@@ -221,6 +235,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Hennig Brand",
     "phase": "Solid"
   },
@@ -236,6 +251,7 @@
     "melt": 388.36,
     "boil": 717.8,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Ancient china",
     "phase": "Solid"
   },
@@ -251,6 +267,7 @@
     "melt": 171.6,
     "boil": 239.11,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Carl Wilhelm Scheele",
     "phase": "Gas"
   },
@@ -266,6 +283,7 @@
     "melt": 83.81,
     "boil": 87.302,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Lord Rayleigh",
     "phase": "Gas"
   },
@@ -281,6 +299,7 @@
     "melt": 336.7,
     "boil": 1032,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Humphry Davy",
     "phase": "Solid"
   },
@@ -296,6 +315,7 @@
     "melt": 1115,
     "boil": 1757,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Humphry Davy",
     "phase": "Solid"
   },
@@ -311,6 +331,7 @@
     "melt": 1814,
     "boil": 3109,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Lars Fredrik Nilson",
     "phase": "Solid"
   },
@@ -326,6 +347,7 @@
     "melt": 1941,
     "boil": 3560,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "William Gregor",
     "phase": "Solid"
   },
@@ -341,6 +363,7 @@
     "melt": 2183,
     "boil": 3680,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Andr\u00e9s Manuel del R\u00edo",
     "phase": "Solid"
   },
@@ -356,6 +379,7 @@
     "melt": 2180,
     "boil": 2944,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Louis Nicolas Vauquelin",
     "phase": "Solid"
   },
@@ -371,6 +395,7 @@
     "melt": 1519,
     "boil": 2334,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "Torbern Olof Bergman",
     "phase": "Solid"
   },
@@ -386,6 +411,7 @@
     "melt": 1811,
     "boil": 3134,
     "sublimation": null,
+    "origin": "Stellar Fusion",
     "discovered_by": "5000 BC",
     "phase": "Solid"
   },
@@ -401,6 +427,7 @@
     "melt": 1768,
     "boil": 3200,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Georg Brandt",
     "phase": "Solid"
   },
@@ -416,6 +443,7 @@
     "melt": 1728,
     "boil": 3003,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Axel Fredrik Cronstedt",
     "phase": "Solid"
   },
@@ -431,6 +459,7 @@
     "melt": 1357.77,
     "boil": 2835,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Middle East",
     "phase": "Solid"
   },
@@ -446,6 +475,7 @@
     "melt": 692.68,
     "boil": 1180,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "India",
     "phase": "Solid"
   },
@@ -461,6 +491,7 @@
     "melt": 302.9146,
     "boil": 2673,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Lecoq de Boisbaudran",
     "phase": "Solid"
   },
@@ -476,6 +507,7 @@
     "melt": 1211.4,
     "boil": 3106,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Clemens Winkler",
     "phase": "Solid"
   },
@@ -491,6 +523,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Bronze Age",
     "phase": "Solid"
   },
@@ -506,6 +539,7 @@
     "melt": 494,
     "boil": 958,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "J\u00f6ns Jakob Berzelius",
     "phase": "Solid"
   },
@@ -521,6 +555,7 @@
     "melt": 265.8,
     "boil": 332,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Antoine J\u00e9r\u00f4me Balard",
     "phase": "Liquid"
   },
@@ -536,6 +571,7 @@
     "melt": 115.78,
     "boil": 119.93,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "William Ramsay",
     "phase": "Gas"
   },
@@ -551,6 +587,7 @@
     "melt": 312.45,
     "boil": 961,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Robert Bunsen",
     "phase": "Solid"
   },
@@ -566,6 +603,7 @@
     "melt": 1050,
     "boil": 1650,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "William Cruickshank (chemist)",
     "phase": "Solid"
   },
@@ -581,6 +619,7 @@
     "melt": 1799,
     "boil": 3203,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Johan Gadolin",
     "phase": "Solid"
   },
@@ -596,6 +635,7 @@
     "melt": 2128,
     "boil": 4650,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Martin Heinrich Klaproth",
     "phase": "Solid"
   },
@@ -611,6 +651,7 @@
     "melt": 2750,
     "boil": 5017,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Charles Hatchett",
     "phase": "Solid"
   },
@@ -626,6 +667,7 @@
     "melt": 2896,
     "boil": 4912,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Carl Wilhelm Scheele",
     "phase": "Solid"
   },
@@ -641,6 +683,7 @@
     "melt": 2430,
     "boil": 4538,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Emilio Segr\u00e8",
     "phase": "Solid"
   },
@@ -656,6 +699,7 @@
     "melt": 2607,
     "boil": 4423,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Karl Ernst Claus",
     "phase": "Solid"
   },
@@ -671,6 +715,7 @@
     "melt": 2237,
     "boil": 3968,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "William Hyde Wollaston",
     "phase": "Solid"
   },
@@ -686,6 +731,7 @@
     "melt": 1828.05,
     "boil": 3236,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "William Hyde Wollaston",
     "phase": "Solid"
   },
@@ -701,6 +747,7 @@
     "melt": 1234.93,
     "boil": 2435,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "unknown, before 5000 BC",
     "phase": "Solid"
   },
@@ -716,6 +763,7 @@
     "melt": 594.22,
     "boil": 1040,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Karl Samuel Leberecht Hermann",
     "phase": "Solid"
   },
@@ -731,6 +779,7 @@
     "melt": 429.7485,
     "boil": 2345,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Ferdinand Reich",
     "phase": "Solid"
   },
@@ -746,6 +795,7 @@
     "melt": 505.08,
     "boil": 2875,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "unknown, before 3500 BC",
     "phase": "Solid"
   },
@@ -761,6 +811,7 @@
     "melt": 903.78,
     "boil": 1908,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "unknown, before 3000 BC",
     "phase": "Solid"
   },
@@ -776,6 +827,7 @@
     "melt": 722.66,
     "boil": 1261,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Franz-Joseph M\u00fcller von Reichenstein",
     "phase": "Solid"
   },
@@ -791,6 +843,7 @@
     "melt": 386.85,
     "boil": 457.4,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Bernard Courtois",
     "phase": "Solid"
   },
@@ -806,6 +859,7 @@
     "melt": 161.4,
     "boil": 165.051,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "William Ramsay",
     "phase": "Gas"
   },
@@ -821,6 +875,7 @@
     "melt": 301.7,
     "boil": 944,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Robert Bunsen",
     "phase": "Solid"
   },
@@ -836,6 +891,7 @@
     "melt": 1000,
     "boil": 2118,
     "sublimation": null,
+    "origin": "Supernova Nucleosynthesis",
     "discovered_by": "Carl Wilhelm Scheele",
     "phase": "Solid"
   },
@@ -851,6 +907,7 @@
     "melt": 1193,
     "boil": 3737,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Carl Gustaf Mosander",
     "phase": "Solid"
   },
@@ -866,6 +923,7 @@
     "melt": 1068,
     "boil": 3716,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Martin Heinrich Klaproth",
     "phase": "Solid"
   },
@@ -881,6 +939,7 @@
     "melt": 1208,
     "boil": 3403,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Carl Auer von Welsbach",
     "phase": "Solid"
   },
@@ -896,6 +955,7 @@
     "melt": 1297,
     "boil": 3347,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Carl Auer von Welsbach",
     "phase": "Solid"
   },
@@ -911,6 +971,7 @@
     "melt": 1315,
     "boil": 3273,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Chien Shiung Wu",
     "phase": "Solid"
   },
@@ -926,6 +987,7 @@
     "melt": 1345,
     "boil": 2173,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Lecoq de Boisbaudran",
     "phase": "Solid"
   },
@@ -941,6 +1003,7 @@
     "melt": 1099,
     "boil": 1802,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Eug\u00e8ne-Anatole Demar\u00e7ay",
     "phase": "Solid"
   },
@@ -956,6 +1019,7 @@
     "melt": 1585,
     "boil": 3273,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Jean Charles Galissard de Marignac",
     "phase": "Solid"
   },
@@ -971,6 +1035,7 @@
     "melt": 1629,
     "boil": 3396,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Carl Gustaf Mosander",
     "phase": "Solid"
   },
@@ -986,6 +1051,7 @@
     "melt": 1680,
     "boil": 2840,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Lecoq de Boisbaudran",
     "phase": "Solid"
   },
@@ -1001,6 +1067,7 @@
     "melt": 1734,
     "boil": 2873,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Marc Delafontaine",
     "phase": "Solid"
   },
@@ -1016,6 +1083,7 @@
     "melt": 1802,
     "boil": 3141,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Carl Gustaf Mosander",
     "phase": "Solid"
   },
@@ -1031,6 +1099,7 @@
     "melt": 1818,
     "boil": 2223,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Per Teodor Cleve",
     "phase": "Solid"
   },
@@ -1046,6 +1115,7 @@
     "melt": 1097,
     "boil": 1469,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Jean Charles Galissard de Marignac",
     "phase": "Solid"
   },
@@ -1061,6 +1131,7 @@
     "melt": 1925,
     "boil": 3675,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Georges Urbain",
     "phase": "Solid"
   },
@@ -1076,6 +1147,7 @@
     "melt": 2506,
     "boil": 4876,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Dirk Coster",
     "phase": "Solid"
   },
@@ -1091,6 +1163,7 @@
     "melt": 3290,
     "boil": 5731,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Anders Gustaf Ekeberg",
     "phase": "Solid"
   },
@@ -1106,6 +1179,7 @@
     "melt": 3695,
     "boil": 6203,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Carl Wilhelm Scheele",
     "phase": "Solid"
   },
@@ -1121,6 +1195,7 @@
     "melt": 3459,
     "boil": 5869,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Masataka Ogawa",
     "phase": "Solid"
   },
@@ -1136,6 +1211,7 @@
     "melt": 3306,
     "boil": 5285,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Smithson Tennant",
     "phase": "Solid"
   },
@@ -1151,6 +1227,7 @@
     "melt": 2719,
     "boil": 4403,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Smithson Tennant",
     "phase": "Solid"
   },
@@ -1166,6 +1243,7 @@
     "melt": 2041.4,
     "boil": 4098,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Antonio de Ulloa",
     "phase": "Solid"
   },
@@ -1181,6 +1259,7 @@
     "melt": 1337.33,
     "boil": 3243,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Middle East",
     "phase": "Solid"
   },
@@ -1196,6 +1275,7 @@
     "melt": 234.321,
     "boil": 629.88,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "unknown, before 2000 BCE",
     "phase": "Liquid"
   },
@@ -1211,6 +1291,7 @@
     "melt": 577,
     "boil": 1746,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "William Crookes",
     "phase": "Solid"
   },
@@ -1226,6 +1307,7 @@
     "melt": 600.61,
     "boil": 2022,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Middle East",
     "phase": "Solid"
   },
@@ -1241,6 +1323,7 @@
     "melt": 544.7,
     "boil": 1837,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Claude Fran\u00e7ois Geoffroy",
     "phase": "Solid"
   },
@@ -1256,6 +1339,7 @@
     "melt": 527,
     "boil": 1235,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Pierre Curie",
     "phase": "Solid"
   },
@@ -1271,6 +1355,7 @@
     "melt": 575,
     "boil": 610,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Dale R. Corson",
     "phase": "Solid"
   },
@@ -1286,6 +1371,7 @@
     "melt": 202,
     "boil": 211.5,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Friedrich Ernst Dorn",
     "phase": "Gas"
   },
@@ -1301,6 +1387,7 @@
     "melt": 300,
     "boil": 950,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Marguerite Perey",
     "phase": "Solid"
   },
@@ -1316,6 +1403,7 @@
     "melt": 1233,
     "boil": 2010,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Pierre Curie",
     "phase": "Solid"
   },
@@ -1331,6 +1419,7 @@
     "melt": 1500,
     "boil": 3500,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Friedrich Oskar Giesel",
     "phase": "Solid"
   },
@@ -1346,6 +1435,7 @@
     "melt": 2023,
     "boil": 5061,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "J\u00f6ns Jakob Berzelius",
     "phase": "Solid"
   },
@@ -1361,6 +1451,7 @@
     "melt": 1841,
     "boil": 4300,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "William Crookes",
     "phase": "Solid"
   },
@@ -1376,6 +1467,7 @@
     "melt": 1405.3,
     "boil": 4404,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Martin Heinrich Klaproth",
     "phase": "Solid"
   },
@@ -1391,6 +1483,7 @@
     "melt": 912,
     "boil": 4447,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Edwin McMillan",
     "phase": "Solid"
   },
@@ -1406,6 +1499,7 @@
     "melt": 912.5,
     "boil": 3505,
     "sublimation": null,
+    "origin": "Neutron-Star Merger / Supernova",
     "discovered_by": "Glenn T. Seaborg",
     "phase": "Solid"
   },
@@ -1421,6 +1515,7 @@
     "melt": 1449,
     "boil": 2880,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Glenn T. Seaborg",
     "phase": "Solid"
   },
@@ -1436,6 +1531,7 @@
     "melt": 1613,
     "boil": 3383,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Glenn T. Seaborg",
     "phase": "Solid"
   },
@@ -1451,6 +1547,7 @@
     "melt": 1259,
     "boil": 2900,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1466,6 +1563,7 @@
     "melt": 1173,
     "boil": 1743,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1481,6 +1579,7 @@
     "melt": 1133,
     "boil": 1269,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1496,6 +1595,7 @@
     "melt": 1800,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1511,6 +1611,7 @@
     "melt": 1100,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1526,6 +1627,7 @@
     "melt": 1100,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1541,6 +1643,7 @@
     "melt": 1900,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1556,6 +1659,7 @@
     "melt": 2400,
     "boil": 5800,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1571,6 +1675,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1586,6 +1691,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Lawrence Berkeley National Laboratory",
     "phase": "Solid"
   },
@@ -1601,6 +1707,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Gesellschaft f\u00fcr Schwerionenforschung",
     "phase": "Solid"
   },
@@ -1616,6 +1723,7 @@
     "melt": 126,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Gesellschaft f\u00fcr Schwerionenforschung",
     "phase": "Solid"
   },
@@ -1631,6 +1739,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Gesellschaft f\u00fcr Schwerionenforschung",
     "phase": "Solid"
   },
@@ -1646,6 +1755,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Gesellschaft f\u00fcr Schwerionenforschung",
     "phase": "Solid"
   },
@@ -1661,6 +1771,7 @@
     "melt": null,
     "boil": null,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Gesellschaft f\u00fcr Schwerionenforschung",
     "phase": "Solid"
   },
@@ -1676,6 +1787,7 @@
     "melt": null,
     "boil": 3570,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Gesellschaft f\u00fcr Schwerionenforschung",
     "phase": "Liquid"
   },
@@ -1691,6 +1803,7 @@
     "melt": 700,
     "boil": 1430,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "RIKEN",
     "phase": "Solid"
   },
@@ -1706,6 +1819,7 @@
     "melt": 340,
     "boil": 420,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1721,6 +1835,7 @@
     "melt": 670,
     "boil": 1400,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1736,6 +1851,7 @@
     "melt": 709,
     "boil": 1085,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1751,6 +1867,7 @@
     "melt": 723,
     "boil": 883,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   },
@@ -1766,6 +1883,7 @@
     "melt": null,
     "boil": 350,
     "sublimation": null,
+    "origin": "Synthetic (Human-made)",
     "discovered_by": "Joint Institute for Nuclear Research",
     "phase": "Solid"
   }
