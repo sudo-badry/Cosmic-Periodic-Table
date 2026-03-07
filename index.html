@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Cosmic Periodic Table</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -127,6 +128,13 @@
     </div>
     <div class="trend-container" style="margin-top:20px; background:rgba(255,255,255,0.03); border-radius:12px; padding:10px;">
       <canvas id="trendChart" height="150"></canvas>
+    </div>
+    <div class="origin-row" style="margin-top:12px">
+      <strong>Cosmic Origin</strong>
+      <div class="origin-meta">
+        <span id="elOriginIcon" class="origin-icon" aria-hidden="true">✦</span>
+        <span id="elOrigin" class="origin-text">Stellar Fusion</span>
+      </div>
     </div>
     <div style="margin-top:12px"><strong>Quick fact</strong><p id="elFact" style="margin:6px 0 0 0;color:rgba(220,240,255,0.9)">Fun fact here.</p></div>
   </div>
