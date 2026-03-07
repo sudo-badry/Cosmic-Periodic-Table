@@ -265,13 +265,20 @@ function buildSearchResultsGrid(){
 
 function openGroup(group){
   const dashboardView = document.getElementById('dashboardView');
+  const groupPanel = document.getElementById('groupPanel');
   const searchResults = document.getElementById('elements');
+  const groupsEl = document.getElementById('groups');
+  const elementsGrid = document.getElementById('elementsGrid');
+  const groupTitle = document.getElementById('groupTitle');
+
   if(searchResults) searchResults.style.display = 'none';
+  if(groupsEl) groupsEl.style.display = 'none';
   if(dashboardView) dashboardView.style.display = 'none';
-  document.querySelector('.groups').style.display='none';
-  const groupPanel = document.getElementById('groupPanel'); groupPanel.style.display='block';
-  document.getElementById('groupTitle').textContent = group.title;
-  const elementsGrid = document.getElementById('elementsGrid'); elementsGrid.innerHTML='';
+  if(groupPanel) groupPanel.style.display = 'block';
+  if(groupTitle) groupTitle.textContent = group.title;
+  if(!elementsGrid) return;
+  elementsGrid.innerHTML = '';
+
   const list = Object.values(ELEMENTS).filter(group.filter).sort((a,b)=>a.number-b.number);
   if(list.length === 0){
     const empty = document.createElement('div');
@@ -282,6 +289,8 @@ function openGroup(group){
   } else {
     list.forEach(el=> elementsGrid.appendChild(createElementTile(el)));
   }
+
+  window.scrollTo(0, 0);
   applyCurrentThermalState();
 }
 
@@ -356,6 +365,16 @@ function classForType(type){
 
 function groupForElement(el){
   return GROUPS.find(g => g.filter(el)) || null;
+}
+
+function originMeta(origin){
+  const label = String(origin || '').toLowerCase();
+  if(label.includes('big bang')) return { icon: '✶', text: 'Big Bang Fusion' };
+  if(label.includes('stellar')) return { icon: '★', text: 'Stellar Fusion' };
+  if(label.includes('supernova')) return { icon: '✦', text: 'Supernova Nucleosynthesis' };
+  if(label.includes('neutron-star')) return { icon: '✹', text: 'Neutron-Star Merger / Supernova' };
+  if(label.includes('synthetic')) return { icon: '⚗', text: 'Synthetic (Human-made)' };
+  return { icon: '✧', text: origin || 'Unknown Origin' };
 }
 
 /* ---------- Fallback canvas atomic renderer ---------- */
@@ -772,6 +791,13 @@ function openElementPanel(num){
   document.getElementById('elGroupPeriod').textContent = `${currentElement.group||'-'} / ${currentElement.period||'-'}`;
   document.getElementById('elType').textContent = currentElement.type;
   document.getElementById('elFact').textContent = currentElement.fact || currentElement.summary || 'No summary available.';
+  const originTextEl = document.getElementById('elOrigin');
+  const originIconEl = document.getElementById('elOriginIcon');
+  if(originTextEl || originIconEl){
+    const origin = originMeta(currentElement.origin);
+    if(originTextEl) originTextEl.textContent = origin.text;
+    if(originIconEl) originIconEl.textContent = origin.icon;
+  }
   updateTrendChart(currentElement.type);
   document.getElementById('overlay').classList.add('visible'); document.getElementById('infoPanel').classList.add('visible');
   if(atomEl) atomEl.classList.add('reacting');
@@ -933,7 +959,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 /* expose for tiles */
 window.openElement = (n)=> openElementPanel(n);
-function openElement(n){ openElementPanel(n); }
+function openElement(n){
+  if('vibrate' in navigator) navigator.vibrate(10);
+  openElementPanel(n);
+}
 window.setOrbital = (orbital)=>{
   currentOrbital = orbital;
   if(QM && currentElement && currentElement.number === 1 && typeof QM.solveHydrogenRadial === 'function'){
