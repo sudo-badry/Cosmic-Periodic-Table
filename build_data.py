@@ -5,6 +5,17 @@ SUBLIMATION_FALLBACK_K = {
     6: 3900,  # Carbon
 }
 
+def classify_origin(number: int) -> str:
+    if number <= 2:
+        return "Big Bang Nucleosynthesis"
+    if number <= 26:
+        return "Stellar Fusion"
+    if number <= 56:
+        return "Supernova Nucleosynthesis"
+    if number <= 94:
+        return "Neutron-Star Merger / Supernova"
+    return "Synthetic (Human-made)"
+
 
 def build_cosmic_dataset():
     print("Fetching cosmic elemental data...")
@@ -43,6 +54,7 @@ def build_cosmic_dataset():
             "melt": el.get("melt", "Unknown"),
             "boil": el.get("boil", "Unknown"),
             "sublimation": SUBLIMATION_FALLBACK_K.get(number),
+            "origin": classify_origin(number),
             "discovered_by": el.get("discovered_by", "Ancient times"),
             "phase": el.get("phase", "Unknown"),
         }
