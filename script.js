@@ -369,12 +369,12 @@ function groupForElement(el){
 
 function originMeta(origin){
   const label = String(origin || '').toLowerCase();
-  if(label.includes('big bang')) return { icon: '✶', text: 'Big Bang Fusion' };
-  if(label.includes('stellar')) return { icon: '★', text: 'Stellar Fusion' };
-  if(label.includes('supernova')) return { icon: '✦', text: 'Supernova Nucleosynthesis' };
-  if(label.includes('neutron-star')) return { icon: '✹', text: 'Neutron-Star Merger / Supernova' };
-  if(label.includes('synthetic')) return { icon: '⚗', text: 'Synthetic (Human-made)' };
-  return { icon: '✧', text: origin || 'Unknown Origin' };
+  if(label.includes('big bang')) return { icon: '*', text: 'Big Bang Fusion' };
+  if(label.includes('stellar')) return { icon: 'S', text: 'Stellar Fusion' };
+  if(label.includes('supernova')) return { icon: 'N', text: 'Supernova Nucleosynthesis' };
+  if(label.includes('neutron-star')) return { icon: 'M', text: 'Neutron-Star Merger / Supernova' };
+  if(label.includes('synthetic')) return { icon: 'L', text: 'Synthetic (Human-made)' };
+  return { icon: '?', text: origin || 'Unknown Origin' };
 }
 
 /* ---------- Fallback canvas atomic renderer ---------- */
@@ -402,10 +402,25 @@ function assignSpins(count){
   return Array.from({ length: count }, (_, i) => i % 2 === 0 ? 'up' : 'down');
 }
 
+function getAtomViewportSize(){
+  const host = atomEl || document.getElementById('atom') || document.getElementById('threeContainer');
+  const w = Math.max(300, Math.floor(host?.clientWidth || 520));
+  const h = Math.max(220, Math.floor(host?.clientHeight || 380));
+  return { w, h };
+}
+
+function applyOrbitalScale(){
+  if(!orbitalsEl || !atomEl) return;
+  const currentWidth = atomEl.clientWidth || 520;
+  const scaleFactor = Math.max(0.55, Math.min(1, currentWidth / 520));
+  orbitalsEl.style.setProperty('--orbitals-scale', scaleFactor.toFixed(3));
+}
+
 function drawDensity(shells){
   if(!densityCanvas || !densityCtx) return;
-  const w = densityCanvas.width = Math.max(360, Math.floor(document.getElementById('threeContainer').clientWidth || 360));
-  const h = densityCanvas.height = Math.max(260, Math.floor(document.getElementById('threeContainer').clientHeight || 260));
+  const { w, h } = getAtomViewportSize();
+  densityCanvas.width = w;
+  densityCanvas.height = h;
   densityCtx.clearRect(0,0,w,h);
   const cx = w/2, cy = h/2;
   shells.forEach((count, i)=>{
@@ -418,6 +433,7 @@ function drawDensity(shells){
     densityCtx.arc(cx,cy,r,0,Math.PI*2);
     densityCtx.fill();
   });
+
 }
 
 function getRadialU(n, l){
@@ -491,8 +507,9 @@ function project(point, scale, cx, cy){
 
 function draw1sOrbital(points){
   if(!densityCanvas || !densityCtx) return;
-  const w = densityCanvas.width = Math.max(360, Math.floor(document.getElementById('threeContainer').clientWidth || 360));
-  const h = densityCanvas.height = Math.max(260, Math.floor(document.getElementById('threeContainer').clientHeight || 260));
+  const { w, h } = getAtomViewportSize();
+  densityCanvas.width = w;
+  densityCanvas.height = h;
   densityCtx.clearRect(0,0,w,h);
   const cx = w/2, cy = h/2;
   const scale = Math.min(w, h) * 0.02;
@@ -517,8 +534,9 @@ function drawOrbitalFromU(u, orbital){
   }
   for(let i=0;i<count;i++) points.push(samplePOrbital(u, radialRMax, orbital));
   if(!densityCanvas || !densityCtx) return;
-  const w = densityCanvas.width = Math.max(360, Math.floor(document.getElementById('threeContainer').clientWidth || 360));
-  const h = densityCanvas.height = Math.max(260, Math.floor(document.getElementById('threeContainer').clientHeight || 260));
+  const { w, h } = getAtomViewportSize();
+  densityCanvas.width = w;
+  densityCanvas.height = h;
   densityCtx.clearRect(0,0,w,h);
   const cx = w/2, cy = h/2;
   const scale = Math.min(w, h) * 0.02;
@@ -563,8 +581,9 @@ function sampleDirection(orbital){
 
 function drawQuantumCloud(orbital){
   if(!densityCanvas || !densityCtx || !radialCDF) return;
-  const w = densityCanvas.width = Math.max(360, Math.floor(document.getElementById('threeContainer').clientWidth || 360));
-  const h = densityCanvas.height = Math.max(260, Math.floor(document.getElementById('threeContainer').clientHeight || 260));
+  const { w, h } = getAtomViewportSize();
+  densityCanvas.width = w;
+  densityCanvas.height = h;
   densityCtx.clearRect(0,0,w,h);
   const cx = w/2, cy = h/2;
   const scale = Math.min(w, h) * 0.015;
@@ -606,9 +625,9 @@ function renderOrbitals(config){
 
 function renderElectrons(shells){
   if(!orbitalsEl) return;
+  applyOrbitalScale();
   const shellsToRender = Math.max(1, Math.min(shells.length, 6));
-  const container = document.getElementById('threeContainer');
-  const size = Math.min(container.clientWidth || 520, container.clientHeight || 380);
+  const size = Math.min(atomEl?.clientWidth || 520, atomEl?.clientHeight || 380);
   const maxOrbit = size * 0.42;
   const baseR = Math.max(38, maxOrbit / (shellsToRender + 1));
   const stepR = Math.max(20, (maxOrbit - baseR) / Math.max(1, shellsToRender - 1));
@@ -652,14 +671,15 @@ function renderNucleus(protons, neutrons){
   const nucleusSize = Math.max(20, nucleusEl.clientWidth || 30);
   const center = nucleusSize / 2;
   const maxR = Math.max(4, center - 4);
+
   for(let i=0;i<total;i++){
     const isProton = i < pCount;
     const dot = document.createElement('div');
     dot.className = `nucleus-dot ${isProton ? 'proton' : 'neutron'}`;
     const a = Math.random() * Math.PI * 2;
     const r = 2 + Math.random() * maxR;
-    dot.style.left = `${center + Math.cos(a) * r}px`;
-    dot.style.top = `${center + Math.sin(a) * r}px`;
+    dot.style.left = `${center + Math.cos(a) * r - 4}px`;
+    dot.style.top = `${center + Math.sin(a) * r - 4}px`;
     nucleusEl.appendChild(dot);
   }
 }
@@ -719,14 +739,6 @@ function drawAtom(shells, t){
   const grad = fallbackCtx.createRadialGradient(cx,cy,20,cx,cy,Math.max(w,h));
   grad.addColorStop(0,'rgba(60,120,255,0.06)'); grad.addColorStop(1,'rgba(0,0,0,0)');
   fallbackCtx.fillStyle = grad; fallbackCtx.fillRect(0,0,w,h);
-  // nucleus
-  const nuc = Math.min(12, Math.max(6, Math.round((currentElement?.number||1)/10)+6));
-  for(let i=0;i<nuc;i++){
-    const a = i*2*Math.PI/nuc + t*0.3;
-    const r = 6 + 2*Math.sin(t+i);
-    fallbackCtx.beginPath(); fallbackCtx.fillStyle = i%2 ? 'rgba(255,110,110,0.95)' : 'rgba(220,220,255,0.95)';
-    fallbackCtx.arc(cx+Math.cos(a)*6, cy+Math.sin(a)*6, r, 0, Math.PI*2); fallbackCtx.fill();
-  }
   // shells
   const maxShells = Math.max(1, Math.min(shells.length, 6));
   const maxOrbit = Math.min(w, h) * 0.42;
@@ -799,12 +811,16 @@ function openElementPanel(num){
     if(originIconEl) originIconEl.textContent = origin.icon;
   }
   updateTrendChart(currentElement.type);
-  document.getElementById('overlay').classList.add('visible'); document.getElementById('infoPanel').classList.add('visible');
+  const overlayEl = document.getElementById('overlay');
+  const panelEl = document.getElementById('infoPanel');
+  overlayEl.classList.add('visible');
+  panelEl.classList.add('visible');
+  panelEl.scrollTo(0, 0);
   if(atomEl) atomEl.classList.add('reacting');
-  if(nucleusEl) nucleusEl.classList.add('pulsing');
   const config = electronConfiguration(atomicNum);
   const shells = shellsFromConfig(config);
   renderNucleus(atomicNum, neutrons);
+  applyOrbitalScale();
   renderOrbitals(config);
   renderElectrons(shells);
   if(QM && typeof QM.solveHydrogenRadial === 'function' && atomicNum === 1){
@@ -835,8 +851,8 @@ function closeInfoPanel(){
   document.getElementById('infoPanel').classList.remove('visible');
   stopFallback();
   if(orbitalsEl) orbitalsEl.innerHTML = '';
+  if(nucleusEl) nucleusEl.innerHTML = '';
   if(atomEl) atomEl.classList.remove('reacting');
-  if(nucleusEl) nucleusEl.classList.remove('pulsing');
   if(focusTrapHandler){ document.removeEventListener('keydown', focusTrapHandler); focusTrapHandler=null; }
   if(prevFocus && typeof prevFocus.focus==='function') prevFocus.focus();
   prevFocus = null;
@@ -991,7 +1007,11 @@ function resizeStars(){
   }));
 }
 
-window.addEventListener('resize', ()=>{ resizeStars(); if(currentElement) drawDensity(shellsFromZ(currentElement.number)); });
+window.addEventListener('resize', ()=>{
+  resizeStars();
+  applyOrbitalScale();
+  if(currentElement) drawDensity(shellsFromZ(currentElement.number));
+});
 resizeStars();
 
 function animateStars(){
@@ -1102,6 +1122,7 @@ window.addEventListener('mousemove', (e)=>{
     parallaxRaf = 0;
   });
 });
+
 
 
 
